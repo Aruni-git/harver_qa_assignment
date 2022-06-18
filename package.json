@@ -1,0 +1,16 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.spec.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@applitools/eyes-cypress": "^3.26.3",
+    "cypress": "8.7"
+  }
+}
