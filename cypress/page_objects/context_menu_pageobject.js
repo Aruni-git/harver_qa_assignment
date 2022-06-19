@@ -1,6 +1,6 @@
 export function navigateToContextMenuPage() {
   //click on context menu
-  cy.get(":nth-child(7) > a").click();
+  cy.contains("a", "Context Menu").click();
 }
 
 export function validatePage(expectedText) {

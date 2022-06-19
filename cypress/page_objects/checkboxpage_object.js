@@ -1,6 +1,6 @@
 export function navigateToCheckboxPage() {
   //click on checkbox
-  cy.get("#content > ul > li:nth-child(6) > a").click();
+  cy.contains("a", "Checkboxes").click();
 }
 
 export function validatePage(expectedText) {
@@ -10,12 +10,12 @@ export function validatePage(expectedText) {
 
 export function checkAsTrue() {
   //mark check box as true
-  cy.get("#checkboxes > :nth-child(1)").click();
+ cy.contains("checkbox 1").click();
   cy.get('[checked=""]').should("be.checked");
 }
 
 export function uncheck() {
   //uncheck checkbox
-  cy.get("#checkboxes > :nth-child(1)").click();
-  cy.get("#checkboxes > :nth-child(1)").should("not.be.checked");
+  cy.contains("checkbox 1").click();
+  cy.contains("checkbox 1").should("not.be.checked");
 }

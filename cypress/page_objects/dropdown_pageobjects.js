@@ -1,6 +1,6 @@
 export function navigateToDropDownPage() {
   //click on drop down
-  cy.get(":nth-child(11) > a").click();
+  cy.contains("a", "Dropdown").click();
 }
 
 export function validatePage(expectedText) {

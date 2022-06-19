@@ -1,6 +1,6 @@
 export function navigateToAddRemoveElementsPage() {
   //click on add/remove elements
-  cy.get("ul > :nth-child(2) > a").click();
+ cy.contains("a", "Add/Remove Elements").click();
 }
 
 export function validatePage(expectedText) {
